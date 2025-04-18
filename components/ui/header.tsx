@@ -1,4 +1,4 @@
-import {  Mountain } from 'lucide-react'
+import { Mountain } from 'lucide-react'
 import React from 'react'
 import { MobileMenu } from '../mobile-menu'
 import Link from 'next/link'
@@ -7,9 +7,13 @@ function Header() {
     return (
         <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur-md">
             <div className="container flex h-16 items-center justify-between">
-                <div className="flex items-center gap-2">
-                    <Mountain className="h-8 w-8 text-emerald-600" />
-                    <span className="text-xl font-bold text-emerald-800">Geoparque Caiuá</span>
+                <div className="flex items-center gap-2 ">
+                    <img
+                        src="/images/logo.jpg"
+                        alt="Logotipo Geoparque Caiuá"
+                        className=" w-32 xl:ml-2 rounded"
+                    />
+                    <span className="text-xl font-bold text-orange-800">Geoparque Caiuá</span>
                 </div>
                 <nav className="hidden md:flex items-center space-x-6">
                     <Link href="#sobre" className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">

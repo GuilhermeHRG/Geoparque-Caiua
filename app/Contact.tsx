@@ -1,60 +1,72 @@
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react'
+// app/Contact.tsx
 import React from 'react'
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from 'lucide-react'
 
-function Contact() {
+export default function Contact() {
+  const contactMethods = [
+    {
+      icon: <Phone className="h-6 w-6 text-emerald-600" />,
+      label: '(44) 3574‑1234',
+    },
+    {
+      icon: <Mail className="h-6 w-6 text-emerald-600" />,
+      label: 'contato@geoparquecaiua.org.br',
+    },
+    {
+      icon: <MapPin className="h-6 w-6 text-emerald-600" />,
+      label: 'Rod. PR‑272, Km 18, Cruzeiro do Oeste ‑ PR',
+    },
+  ]
+
   return (
-    <section className="py-16 md:py-24 flex flex-col items-center justify-center">
-          <div className="container px-4 md:px-6">
-            <div className="grid gap-10 lg:grid-cols-2">
-              <Card className="p-6">
-                <h3 className="text-xl font-bold text-emerald-800 mb-4">Entre em Contato</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-emerald-600" />
-                    <p>(11) 1234-5678</p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-emerald-600" />
-                    <p>contato@geoparqueterra.com.br</p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <MapPin className="h-5 w-5 text-emerald-600" />
-                    <p>Estrada do Geoparque, km 15 - Serra Verde</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 mt-6">
-                  <Button
-                    size="icon"
-                    variant="outline"
-                    className="rounded-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-                  >
-                    <Facebook className="h-5 w-5" />
-                    <span className="sr-only">Facebook</span>
-                  </Button>
-                  <Button
-                    size="icon"
-                    variant="outline"
-                    className="rounded-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-                  >
-                    <Instagram className="h-5 w-5" />
-                    <span className="sr-only">Instagram</span>
-                  </Button>
-                  <Button
-                    size="icon"
-                    variant="outline"
-                    className="rounded-full border-emerald-600 text-emerald-600 hover:bg-emerald-50"
-                  >
-                    <Twitter className="h-5 w-5" />
-                    <span className="sr-only">Twitter</span>
-                  </Button>
-                </div>
-              </Card>
+    <section
+      id="contato"
+      className="py-20 md:py-28 bg-white flex justify-center "
+    >
+      <div className="w-full max-w-md px-4 md:px-6 text-center border border-gray-200 shadow-lg rounded-lg p-6">
+        <span className="inline-block px-4 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium mb-4">
+          Fale Conosco
+        </span>
+        <h2 className="text-3xl md:text-4xl font-bold text-emerald-900 mb-2">
+          Entre em Contato
+        </h2>
+        <p className="text-gray-600 mb-8">
+          Tem dúvidas, sugestões ou quer agendar uma visita guiada? Fale conosco pelos canais abaixo.
+        </p>
+
+        <div className="space-y-6 text-left">
+          {contactMethods.map((m, i) => (
+            <div key={i} className="flex items-center gap-4">
+              {m.icon}
+              <span className="text-gray-700">{m.label}</span>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+
+        <div className="flex justify-center gap-6 mt-8">
+          <a
+            href="https://facebook.com/geoparque.caiua"
+            aria-label="Facebook"
+            className="text-gray-600 hover:text-emerald-600 transition-colors"
+          >
+            <Facebook className="h-6 w-6" />
+          </a>
+          <a
+            href="https://instagram.com/geoparque.caiua"
+            aria-label="Instagram"
+            className="text-gray-600 hover:text-emerald-600 transition-colors"
+          >
+            <Instagram className="h-6 w-6" />
+          </a>
+          <a
+            href="https://twitter.com/GeoparqueCaiua"
+            aria-label="Twitter"
+            className="text-gray-600 hover:text-emerald-600 transition-colors"
+          >
+            <Twitter className="h-6 w-6" />
+          </a>
+        </div>
+      </div>
+    </section>
   )
 }
-
-export default Contact

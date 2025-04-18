@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Geoparque Caiuá',
-  description: 'Geoparque Caiuá',
+  description: 'Turismo e conservação no Geoparque Caiuá – Cruzeiro do Oeste, Tuneiras do Oeste, Formosa do Oeste, Alto Piquiri e Mariluz',
 }
 
 export default function RootLayout({
