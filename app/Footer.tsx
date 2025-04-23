@@ -73,14 +73,7 @@ function Footer() {
                     Horários
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#ingressos"
-                    className="hover:text-emerald-600 transition-colors"
-                  >
-                    Ingressos
-                  </Link>
-                </li>
+               
                 <li>
                   <Link
                     href="#como-chegar"
@@ -96,14 +89,7 @@ function Footer() {
                 Recursos
               </h4>
               <ul className="space-y-2 text-gray-600">
-                <li>
-                  <Link
-                    href="#blog"
-                    className="hover:text-emerald-600 transition-colors"
-                  >
-                    Blog
-                  </Link>
-                </li>
+                
                 <li>
                   <Link
                     href="#galeria"
@@ -112,47 +98,10 @@ function Footer() {
                     Galeria
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="#pesquisas"
-                    className="hover:text-emerald-600 transition-colors"
-                  >
-                    Pesquisas
-                  </Link>
-                </li>
+                
               </ul>
             </div>
-            <div>
-              <h4 className="text-sm font-semibold text-gray-700 mb-3">
-                Legal
-              </h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>
-                  <Link
-                    href="#termos"
-                    className="hover:text-emerald-600 transition-colors"
-                  >
-                    Termos
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#privacidade"
-                    className="hover:text-emerald-600 transition-colors"
-                  >
-                    Privacidade
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#cookies"
-                    className="hover:text-emerald-600 transition-colors"
-                  >
-                    Cookies
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
 
@@ -164,26 +113,20 @@ function Footer() {
           </p>
           <div className="flex space-x-4">
             <Link
-              href="https://facebook.com/geoparque.caiua"
+              href="https://www.facebook.com/profile.php?id=61551064623617"
               className="text-gray-600 hover:text-emerald-600 transition-colors"
               aria-label="Facebook"
             >
               <Facebook className="h-5 w-5" />
             </Link>
             <Link
-              href="https://instagram.com/geoparque.caiua"
+              href="https://instagram.com/geoparquecaiua"
               className="text-gray-600 hover:text-emerald-600 transition-colors"
               aria-label="Instagram"
             >
               <Instagram className="h-5 w-5" />
             </Link>
-            <Link
-              href="https://twitter.com/GeoparqueCaiua"
-              className="text-gray-600 hover:text-emerald-600 transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter className="h-5 w-5" />
-            </Link>
+           
           </div>
         </div>
       </div>

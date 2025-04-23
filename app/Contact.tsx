@@ -23,7 +23,7 @@ export default function Contact() {
       id="contato"
       className="py-20 md:py-28 bg-white flex justify-center "
     >
-      <div className="w-full max-w-md px-4 md:px-6 text-center border border-gray-200 shadow-lg rounded-lg p-6">
+      <div className="w-full max-w-[80%]  px-4 md:px-6 text-center border border-gray-200 shadow-lg rounded-lg p-6">
         <span className="inline-block px-4 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium mb-4">
           Fale Conosco
         </span>
@@ -45,26 +45,20 @@ export default function Contact() {
 
         <div className="flex justify-center gap-6 mt-8">
           <a
-            href="https://facebook.com/geoparque.caiua"
+            href="https://www.facebook.com/profile.php?id=61551064623617"
             aria-label="Facebook"
             className="text-gray-600 hover:text-emerald-600 transition-colors"
           >
             <Facebook className="h-6 w-6" />
           </a>
           <a
-            href="https://instagram.com/geoparque.caiua"
+            href="https://instagram.com/geoparquecaiua"
             aria-label="Instagram"
             className="text-gray-600 hover:text-emerald-600 transition-colors"
           >
             <Instagram className="h-6 w-6" />
           </a>
-          <a
-            href="https://twitter.com/GeoparqueCaiua"
-            aria-label="Twitter"
-            className="text-gray-600 hover:text-emerald-600 transition-colors"
-          >
-            <Twitter className="h-6 w-6" />
-          </a>
+         
         </div>
       </div>
     </section>
