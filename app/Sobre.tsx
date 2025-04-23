@@ -21,8 +21,19 @@ function Sobre() {
           território dedicado à conservação de afloramentos mesozóicos, fósseis
           e trilhas educativas que revelam a história geológica da região.
         </p>
+        <div className="w-full max-w-2xl aspect-video mb-12">
+          <iframe
+            className="w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/51wK_LU4hac?autoplay=1&mute=1"
+            title="Apresentação - História do Geoparque Caiuá"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
 
-        <div className="grid gap-10 lg:grid-cols-4">
+        <div className="grid gap-10 lg:grid-cols-4 max-sm:w-full">
           {[
             {
               icon: <MapPin className="h-8 w-8 text-emerald-600" />,
@@ -35,7 +46,7 @@ function Sobre() {
               value: '12',
             },
             {
-              icon: <Leaf className="h-8 w-8 text-emerald-600" />,
+              icon: <Leaf className="h-8 w-8  text-emerald-600" />,
               title: 'Espécies Endêmicas',
               value: '50+',
             },

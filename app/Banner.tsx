@@ -8,12 +8,13 @@ function Banner() {
   return (
     <section className="relative">
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent z-10" />
-      <div className="relative h-[70vh] w-full">
+      <div className="relative h-[100svh] w-full ">
         <Image
           src="/images/bannerHome.jpg"
           alt="Cânion do Geoparque Caiuá"
           fill
           priority
+          className='max-sm:object-cover'
         />
         <div className="absolute inset-0 z-20 flex flex-col justify-center items-start px-8 md:px-16 lg:px-32">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
