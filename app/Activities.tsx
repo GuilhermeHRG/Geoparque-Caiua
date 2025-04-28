@@ -57,7 +57,7 @@ export default function Activities() {
   return (
     <section
       id="atividades"
-      className="py-20 md:py-28 bg-stone-50 flex flex-col items-center"
+      className="py-20 md:py-28 bg-stone-50 flex flex-col items-center justify-center"
     >
       <div className="max-w-6xl w-full px-4 md:px-6">
         {/* Heading */}
@@ -104,7 +104,7 @@ export default function Activities() {
           {/* Content */}
           {(['trilhas', 'oficinas', 'palestras'] as const).map((tab) => (
             <TabsContent key={tab} value={tab} className="w-full">
-              <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
                 {atividadesData[tab].map((item, i) => (
                   <Card
                     key={i}

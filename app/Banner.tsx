@@ -24,12 +24,7 @@ function Banner() {
             Explore afloramentos do Grupo Caiuá, cânions e trilhas que contam a
             história geológica do Noroeste do Paraná.
           </p>
-          <Button
-            variant="outline"
-            className="mt-6 bg-orange-600/80 text-orange-100 border-white/20 hover:text-white hover:bg-orange-600"
-          >
-            Explorar Geossítios <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
+          
         </div>
       </div>
     </section>

@@ -57,9 +57,7 @@ export function MobileMenu() {
             </Link>
           </SheetClose>
         </div>
-        <div className="mt-auto flex flex-col gap-2 pt-6">
-          <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Agendar Visita</Button>
-        </div>
+        
       </SheetContent>
     </Sheet>
   )
