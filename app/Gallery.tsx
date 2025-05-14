@@ -1,5 +1,6 @@
-// app/Gallery.tsx
-import { Button } from '@/components/ui/button'
+'use client'
+
+import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -11,6 +12,15 @@ function Gallery() {
     '/images/dinossauro.jpg',
     '/images/cachoeira.jpg',
   ]
+
+  const imageVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: 'easeOut' },
+    },
+  }
 
   return (
     <section
@@ -27,18 +37,25 @@ function Gallery() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {fotos.map((src, i) => (
-            <div key={i} className="relative h-48 w-full overflow-hidden rounded-lg">
+            <motion.div
+              key={i}
+              className="relative h-48 w-full overflow-hidden rounded-lg will-change-transform"
+              variants={imageVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.03 }}
+              transition={{ duration: 0.3 }}
+            >
               <Image
                 src={src}
                 alt={`Foto ${i + 1} do Geoparque Caiuá`}
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
-
-       
       </div>
     </section>
   )

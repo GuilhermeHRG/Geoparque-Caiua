@@ -20,7 +20,7 @@ export default function Education() {
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
             Conservação e Pesquisa
           </h2>
-          <ul className="list-disc ml-6 mt-2 space-y-2">
+          <ul className="list-disc ml-6 mt-2 space-y-2 list-none">
             <li>
               <Check className="inline-block mr-2 align-middle" />
               Monitoramento e estudo de fósseis mesozóicos

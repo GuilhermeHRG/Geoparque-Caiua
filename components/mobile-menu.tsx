@@ -16,46 +16,47 @@ export function MobileMenu() {
       </SheetTrigger>
       <SheetContent side="left" className="flex flex-col">
         <div className="flex flex-col space-y-4 mt-8">
-          <SheetClose asChild>
-            <Link
-              href="#sobre"
-              className="flex items-center text-lg font-medium transition-colors hover:text-emerald-600"
-            >
-              Sobre
-            </Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link
-              href="#atracoes"
-              className="flex items-center text-lg font-medium transition-colors hover:text-emerald-600"
-            >
-              Atrações
-            </Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link
-              href="#atividades"
-              className="flex items-center text-lg font-medium transition-colors hover:text-emerald-600"
-            >
-              Atividades
-            </Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link
-              href="#conservacao"
-              className="flex items-center text-lg font-medium transition-colors hover:text-emerald-600"
-            >
-              Conservação
-            </Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link
-              href="#visitar"
-              className="flex items-center text-lg font-medium transition-colors hover:text-emerald-600"
-            >
-              Visitar
-            </Link>
-          </SheetClose>
+        <a href="#sobre" className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">
+                        Sobre
+                    </a>
+                    
+                    <a
+                        href="#atracoes"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Atrações
+                    </a>
+                    <a
+                        href="#atividades"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Atividades
+                    </a>
+                    <a
+                        href="#conservacao"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Conservação
+                    </a>
+                    
+                    <a
+                        href="#galeria"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Galeria
+                    </a>
+                    <a
+                        href="#equipe"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Equipe
+                    </a>
+                    <a
+                        href="#visitar"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Visitar
+                    </a>
         </div>
         
       </SheetContent>

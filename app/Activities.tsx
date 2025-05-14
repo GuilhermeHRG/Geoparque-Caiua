@@ -57,7 +57,7 @@ export default function Activities() {
   return (
     <section
       id="atividades"
-      className="py-20 md:py-28 bg-stone-50 flex flex-col items-center justify-center"
+      className="py-20 md:py-28 bg-stone-50 flex flex-col items-center"
     >
       <div className="max-w-6xl w-full px-4 md:px-6">
         {/* Heading */}

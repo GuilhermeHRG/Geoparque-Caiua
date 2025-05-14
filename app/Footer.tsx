@@ -22,7 +22,7 @@ function Footer() {
               </span>
             </div>
             <p className="text-gray-600">
-              Território reunindo 5 municípios do Paraná, dedicado à conservação
+              Território reunindo 4 municípios do Paraná, dedicado à conservação
               de afloramentos mesozóicos, fósseis e trilhas educativas.
             </p>
           </div>

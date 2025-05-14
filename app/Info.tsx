@@ -14,10 +14,10 @@ function Info() {
           Visitação
         </div>
         <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-purple-900 mb-4">
-          Planeje Sua Visita
+          Visite os municípios que compõem o Geoparque Caiuá
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 mb-8">
-          Aberto de terça a domingo, das 8h às 17h. Grupos acima de 10 pessoas
+          Museu aberto de terça a domingo, das 8h às 17h. Grupos acima de 10 pessoas
           devem agendar com antecedência.
         </p>
 
@@ -41,7 +41,16 @@ function Info() {
                 'Disponível mediante agendamento; até 10 pessoas sem custo.',
             },
           ].map((dica, i) => (
-            <div key={i} className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm">
+            <div
+              key={i}
+              className="relative flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-sm"
+            >
+              {/* Tarja "Em breve" para Visita Guiada */}
+              {dica.title === 'Visita Guiada' && (
+                <div className="absolute top-2 right-2 bg-orange-400 text-white text-xs font-bold px-2 py-1 rounded">
+                  Em breve
+                </div>
+              )}
               {dica.icon}
               <h4 className="mt-4 font-bold text-purple-800">{dica.title}</h4>
               <p className="text-gray-600">{dica.description}</p>

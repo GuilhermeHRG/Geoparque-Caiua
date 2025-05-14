@@ -1,7 +1,6 @@
 import { Mountain } from 'lucide-react'
 import React from 'react'
 import { MobileMenu } from '../mobile-menu'
-import Link from 'next/link'
 
 function Header() {
     return (
@@ -16,33 +15,47 @@ function Header() {
                     <span className="text-xl font-bold text-orange-800">Geoparque Caiuá</span>
                 </div>
                 <nav className="hidden md:flex items-center space-x-6">
-                    <Link href="#sobre" className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">
+                    <a href="#sobre" className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors">
                         Sobre
-                    </Link>
-                    <Link
+                    </a>
+                    
+                    <a
                         href="#atracoes"
                         className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
                     >
                         Atrações
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="#atividades"
                         className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
                     >
                         Atividades
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         href="#conservacao"
                         className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
                     >
                         Conservação
-                    </Link>
-                    <Link
+                    </a>
+                    
+                    <a
+                        href="#galeria"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Galeria
+                    </a>
+                    {/* <a
+                        href="#equipe"
+                        className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
+                    >
+                        Equipe
+                    </a> */}
+                    <a
                         href="#visitar"
                         className="text-sm font-medium text-gray-700 hover:text-emerald-600 transition-colors"
                     >
                         Visitar
-                    </Link>
+                    </a>
                 </nav>
                 <MobileMenu />
             </div>

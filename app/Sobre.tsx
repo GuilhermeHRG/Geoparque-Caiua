@@ -17,9 +17,8 @@ function Sobre() {
         </h2>
         <p className="max-w-2xl text-gray-700 mb-12">
           Localizado nos municípios de Cruzeiro do Oeste, Tuneiras do Oeste,
-          Formosa do Oeste, Alto Piquiri e Mariluz, o Geoparque Caiuá é um
-          território dedicado à conservação de afloramentos mesozóicos, fósseis
-          e trilhas educativas que revelam a história geológica da região.
+          Alto Piquiri e Mariluz, o Geoparque Caiuá é um
+          território dedicado à conservação de biodiversidade, que revelam a história geológica da região.
         </p>
         <div className="w-full max-w-2xl aspect-video mb-12">
           <iframe
@@ -38,7 +37,7 @@ function Sobre() {
             {
               icon: <MapPin className="h-8 w-8 text-emerald-600" />,
               title: 'Municípios',
-              value: '5',
+              value: '4',
             },
             {
               icon: <Mountain className="h-8 w-8 text-emerald-600" />,

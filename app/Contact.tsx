@@ -6,11 +6,11 @@ export default function Contact() {
   const contactMethods = [
     {
       icon: <Phone className="h-6 w-6 text-emerald-600" />,
-      label: '(44) 3574‑1234',
+      label: '(44) 3676-4754',
     },
     {
       icon: <Mail className="h-6 w-6 text-emerald-600" />,
-      label: 'contato@geoparquecaiua.org.br',
+      label: 'geoparquecaiua@gmail.com',
     },
     {
       icon: <MapPin className="h-6 w-6 text-emerald-600" />,
@@ -23,7 +23,7 @@ export default function Contact() {
       id="contato"
       className="py-20 md:py-28 bg-white flex justify-center "
     >
-      <div className="w-full max-w-[80%]  px-4 md:px-6 text-center border border-gray-200 shadow-lg rounded-lg p-6">
+      <div className="w-full max-w-[92%]  px-4 md:px-6 text-center border border-gray-200 shadow-lg rounded-lg p-6">
         <span className="inline-block px-4 py-1 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium mb-4">
           Fale Conosco
         </span>

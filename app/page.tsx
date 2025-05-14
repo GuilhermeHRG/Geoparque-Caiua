@@ -1,16 +1,4 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import {
-  Calendar,
-  MapPin,
-  Mountain,
-  Phone,
-  Mail,
-  Instagram,
-  Facebook,
-  Twitter,
-} from "lucide-react"
+
 import Header from "@/components/ui/header"
 import Banner from "./Banner"
 import Sobre from "./Sobre"
@@ -18,10 +6,12 @@ import Atractions from "./Atractions"
 import Activities from "./Activities"
 import Education from "./Education"
 import Gallery from "./Gallery"
+import Equip from "./Equip"
 import Contact from "./Contact"
 import Cta from "./Cta"
 import Info from "./Info"
 import Footer from "./Footer"
+import AtractionsCulturals from "./Atractions-Culturals"
 
 export default function GeoparqueLandingPage() {
   return (
@@ -38,6 +28,7 @@ export default function GeoparqueLandingPage() {
 
         {/* Atrações Principais */}
        <Atractions/>
+       {/* <AtractionsCulturals/> */}
 
         {/* Atividades */}
        <Activities/>
@@ -47,6 +38,8 @@ export default function GeoparqueLandingPage() {
 
         {/* Galeria de Imagens */}
        <Gallery/>
+
+       {/* <Equip/> */}
 
         {/* Informações de Visitação */}
        <Info/>
